@@ -84,24 +84,10 @@ build:
 
 integrations:
   notifications:
-    - integrationName: email
-      type: email
-      on_success: never
-      on_failure: never
-      on_start: never
-      on_pull_request: never
-    - integrationName: irc
-      type: irc
-      recipients:
-      - "chat.freenode.net#ansible-notices"
-      on_success: change
-      on_failure: always
-      on_start: never
-      on_pull_request: always
     - integrationName: slack
       type: slack
       recipients:
-      - "#shippable"
+      - "#atmosphere-ansible"
       on_success: change
       on_failure: always
       on_start: never
